@@ -1,0 +1,41 @@
+Main: Balance before: 997.5
+Accruing interest for 1 month:
+  Initial balance: 997.5
+  Initial rate: 0.0015
+  Interest accrued: 1.49625
+  New balance: 998.996
+Main: Operation was successful!
+Main: Balance after: 998.996
+
+Main: Balance before: 998.996
+Accruing interest for 1 month:
+  Initial balance: 998.996
+  Initial rate: 0.0015
+  Interest accrued: 1.49849
+  New balance: 1000.49
+Accruing interest for 1 month:
+  Initial balance: 1000.49
+  Initial rate: 0.00225
+  Interest accrued: 2.25111
+  New balance: 1002.75
+Accruing interest for 1 month:
+  Initial balance: 1002.75
+  Initial rate: 0.00225
+  Interest accrued: 2.25618
+  New balance: 1005
+Accruing interest for 1 month:
+  Initial balance: 1005
+  Initial rate: 0.00225
+  Interest accrued: 2.26125
+  New balance: 1007.26
+Accruing interest for 1 month:
+  Initial balance: 1007.26
+  Initial rate: 0.00225
+  Interest accrued: 2.26634
+  New balance: 1009.53
+Main: Operation was successful!
+Main: Balance after: 1009.53
+
+Main: Balance before: 1009.53
+Main: Operation was successful!
+Main: Balance after: 1395.32

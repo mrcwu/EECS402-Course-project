@@ -1,0 +1,8 @@
+Enter the initial balance of the account: 980.00
+Enter the number of months to accrue interest: 1500
+Show month-by-month results - 'y' for yes, any other for no: n
+Interest accrued for 1500 months!
+
+Initial balance: 980
+Total interest accrued: 45116.8
+Final balance: 46096.8

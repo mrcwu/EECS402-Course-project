@@ -1,0 +1,5 @@
+Enter the initial balance of the account: 1500.00
+Enter the number of months to accrue interest: -3
+Show month-by-month results - 'y' for yes, any other for no: n
+ERROR in accrueInterest: numMonths must be > 0, but the value -3 was provided!
+Sorry, an error was detected.  Unable to provide results!

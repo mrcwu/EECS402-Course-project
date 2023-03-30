@@ -1,0 +1,144 @@
+Script started on Sun 13 Nov 2022 05:39:00 PM EST
+megaman% make -f Makefile
+g++ -c project3.cpp -o project3.o
+g++ -c ColorClass.cpp -o ColorClass.o
+g++ -c ColorImageClass.cpp -o ColorImageClass.o
+g++ -c PatternClass.cpp -o PatternClass.o
+g++ -c questionForPath.cpp -o questionForPath.o
+g++ -c questionForColor.cpp -o questionForColor.o
+g++ -c questionForLoc.cpp -o questionForLoc.o
+g++ -c printInvalidInNum.cpp -o printInvalidInNum.o
+g++ -c inPatternCheck.cpp -o inPatternCheck.o
+g++ -c inPpmCheck.cpp -o inPpmCheck.o
+g++ project3.o ColorClass.o ColorImageClass.o PatternClass.o questionForPath.o questionForColor.o questionForLoc.o printInvalidInNum.o inPatternCheck.o inPpmCheck.o -o proj3.exe
+megaman% 
+megaman% valgrind --leak-check=full ./proj3.exe
+==2662== Memcheck, a memory error detector
+==2662== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==2662== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==2662== Command: ./proj3.exe
+==2662== 
+Enter string for PPM image file name to load: deer.ppm
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:1
+1. Specify upper left and lower right corners of rectangle
+2. Specify upper left corner and dimensions of rectangle
+3. Specify extent from center of rectangle
+Enter int for rectangle specification method: 3
+Enter rectangle center row and column: 132 327
+Enter int for half number of rows: 12
+Enter int for half number of columns: 12
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for rectangle color: 1
+1. No
+2. Yes
+Enter int for rectangle fill option: 1
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:1
+1. Specify upper left and lower right corners of rectangle
+2. Specify upper left corner and dimensions of rectangle
+3. Specify extent from center of rectangle
+Enter int for rectangle specification method: 1
+Enter upper left corner row and column: 300 312
+Enter lower right corner row and column: 364 337
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for rectangle color: 3
+1. No
+2. Yes
+Enter int for rectangle fill option: 1
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:3
+Enter string for file name of PPM image to insert: topHat.ppm
+Enter upper left corner to insert image row and column: 35 280
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for transparecy color: 5
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:2
+Enter string for file name containing pattern: 140 375
+Error: The file name 140 is not found. Please try again.
+Enter string for file name containing pattern: Error: The file name 375 is not found. Please try again.
+Enter string for file name containing pattern: 5 ohdeerPattern.txt
+Enter upper left corner of pattern row and column: 140 375
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for pattern color: 5
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:1
+1. Specify upper left and lower right corners of rectangle
+2. Specify upper left corner and dimensions of rectangle
+3. Specify extent from center of rectangle
+Enter int for rectangle specification method: 2
+Enter upper left corner row and column: 375 200
+Enter int for number of rows: 50
+Enter int for number of columns: 200
+1. Red
+2. Green
+3. Blue
+4. Black
+5. White
+Enter int for rectangle color: 5
+1. No
+2. Yes
+Enter int for rectangle fill option: 2
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:4
+Enter string for PPM file name to output: new5_texting     sting.ppm
+1. Annotate image with rectangle
+2. Annotate image with pattern from file
+3. Insert another image
+4. Write out current image
+5. Exit the program
+Enter int for main menu choice:5
+Thank you for using this program
+==2662== 
+==2662== HEAP SUMMARY:
+==2662==     in use at exit: 0 bytes in 0 blocks
+==2662==   total heap usage: 763 allocs, 763 frees, 3,545,657 bytes allocated
+==2662== 
+==2662== All heap blocks were freed -- no leaks are possible
+==2662== 
+==2662== For counts of detected and suppressed errors, rerun with: -v
+==2662== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+megaman% exit
+exit
+
+Script done on Sun 13 Nov 2022 05:43:21 PM EST

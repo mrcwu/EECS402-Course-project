@@ -1,0 +1,28 @@
+Enter the initial balance of the account: 999.99
+Enter the number of months to accrue interest: 4
+Show month-by-month results - 'y' for yes, any other for no: y
+Accruing interest for 1 month:
+  Initial balance: 999.99
+  Initial rate: 0.0015
+  Interest accrued: 1.49999
+  New balance: 1001.49
+Accruing interest for 1 month:
+  Initial balance: 1001.49
+  Initial rate: 0.00225
+  Interest accrued: 2.25335
+  New balance: 1003.74
+Accruing interest for 1 month:
+  Initial balance: 1003.74
+  Initial rate: 0.00225
+  Interest accrued: 2.25842
+  New balance: 1006
+Accruing interest for 1 month:
+  Initial balance: 1006
+  Initial rate: 0.00225
+  Interest accrued: 2.2635
+  New balance: 1008.27
+Interest accrued for 4 months!
+
+Initial balance: 999.99
+Total interest accrued: 8.27526
+Final balance: 1008.27

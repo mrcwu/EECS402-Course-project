@@ -1,0 +1,55 @@
+int main()
+{
+  double accountBalance;
+  bool success;
+
+  //NOTE: If this weren't just a "driver program" to test the real
+  //      functionality of the project, the 997.50 literal value
+  //      would be considered a "magic number"!!!!!
+  accountBalance = 997.50;
+
+  cout << "Main: Balance before: " << accountBalance << endl;
+  success = accrueOneMonthsInterest(accountBalance, true);
+  if (success)
+  {
+    cout << "Main: Operation was successful!" << endl;
+  }
+  else
+  {
+    cout << "Main: Operation was NOT successful!" << endl;
+  }
+  cout << "Main: Balance after: " << accountBalance << endl;
+  
+  cout << endl; //just a separator
+
+  cout << "Main: Balance before: " << accountBalance << endl;
+  //NOTE: If this weren't just a "driver program" to test the real
+  //      functionality of the project, the 5 (and probably the 'true')
+  //      would be considered a "magic number"!!!!!
+  success = accrueInterest(accountBalance, 5, true);
+  if (success)
+  {
+    cout << "Main: Operation was successful!" << endl;
+  }
+  else
+  {
+    cout << "Main: Operation was NOT successful!" << endl;
+  }
+  cout << "Main: Balance after: " << accountBalance << endl;
+
+  cout << endl; //just a separator
+  
+  cout << "Main: Balance before: " << accountBalance << endl;
+  success = accrueInterest(accountBalance, 144, false);
+  if (success)
+  {
+    cout << "Main: Operation was successful!" << endl;
+  }
+  else
+  {
+    cout << "Main: Operation was NOT successful!" << endl;
+  }
+  cout << "Main: Balance after: " << accountBalance << endl;
+
+  return 0;
+}
